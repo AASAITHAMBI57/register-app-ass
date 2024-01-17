@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: red-application
+  labels:
+    app: red-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: red-app
+  template:
+    metadata:
+      labels:
+        app: red-app
+    spec:
+      containers:
+      - name: red-app-cont1
+        image: aasaithambi5/red-app-pipeline:v1
+        ports:
+        - containerPort: 8080
