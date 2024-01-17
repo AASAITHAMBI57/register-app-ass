@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: red-app-cont1
-        image: aasaithambi5/red-app-pipeline:1.0.0-20
+        image: aasaithambi5/red-app-pipeline:1.0.0-21
         ports:
         - containerPort: 8080
